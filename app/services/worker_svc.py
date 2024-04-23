@@ -2,8 +2,8 @@ from app.core.celery_app import celery_app
 from app.db.database import SessionLocal
 from app.schemas.history import HistoryFullCreate
 from app.services.history_svc import create_full_history, get_by_prompt
-from app.services.openai_svc import generate_openai_prompt
 from app.utils.app_logger import app_logger
+from app.getCurrentTime.get_current_time_svc import generate_openai_prompt
 
 
 @celery_app.task

@@ -63,6 +63,11 @@ services:
       - redis
       - worker
 
+  get_current_time_svc:
+    image: get-current-time-svc
+    ports:
+      - 8000:8000
+
 
 volumes:
   postgres-db:
